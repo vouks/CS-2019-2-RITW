@@ -8,4 +8,10 @@ Este repositório é dedicado para o desenvolvimento do projeto **Running Around
 * Renan Gustavo de Oliveira Ramos
 
 ## Para rodar o projeto
+### Requisitos
+Para ser possível executar o projeto, é necessário ter instalado na sua máquina os seguintes programas:
+* Node JS: pode ser instalado através deste **[link](https://nodejs.org/)**
+* NPM
+
+### Próximos pasos
 Conforme o projeto for sendo desenvolvido, este tópico será atualizado com todas as informações necessárias.
