@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>RATW</title>
+
+    <link href="/public/assets/css/home/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div id="navegacao">
+        <div id="area">
+            <h1 id="logo">Running Around The World</h1>
+            <div id="menu">
+                <a href="/">Sobre</a>
+                <a href="/">Notícias</a>
+                <a href="/login">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="area-principal">
+        <div id="postagem">
+            <h2>Sobre o RATW</h2>
+            <span class="data-postagem">Atualizado em 10 de novembro de 2019</span>
+            <img class="img-postagem" src="public/assets/img/home/atletas-correndo.jpg">
+            <p>Etiam pharetra et dui quis placerat. Vivamus vitae quam hendrerit sem ornare gravida a in nisl. Nunc nec
+                risus diam. Sed accumsan, lacus a suscipit dictum, dui nisi blandit leo, aliquam molestie magna quam sed
+                quam. Sed finibus tristique turpis, eu imperdiet tellus congue non. Sed bibendum velit sed urna
+                venenatis tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Proin vel neque condimentum, finibus eros non, commodo magna. Sed suscipit ex eu ligula
+                dictum, dictum fringilla neque venenatis. Sed iaculis augue lacinia libero dictum tincidunt.</p>
+            <br>
+            <p>Donec orci sapien, ultricies quis luctus id, lacinia ut magna. Donec sapien risus, hendrerit non sapien
+                at, tincidunt suscipit metus. Cras eget nisi mollis est egestas commodo. Nulla tincidunt lorem sit amet
+                ultrices sagittis. Sed eget venenatis magna, vel placerat sem. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec eu porta ex. Morbi consequat justo id finibus facilisis. Quisque commodo justo
+                metus, eget efficitur justo tincidunt varius. Mauris laoreet porttitor tincidunt. Sed luctus tempus
+                mauris. Mauris malesuada commodo lacus vitae condimentum.</p>
+        </div>
+
+        <div id="postagem">
+            <h2>Usuários já cadastrados no Running Around The World</h2>
+            <span class="data-postagem">Atualizado em 10 de novembro de 2019</span>
+            <ul>
+                <% for (var chave in conta){ %>
+                <li><%= conta[chave].nome %> - <%= conta[chave].email %></li>
+                <% } %>
+            </ul>
+        </div>
+
+        <div id="postagem">
+            <h2>Sobre o RATW</h2>
+            <span class="data-postagem">Atualizado em 10 de novembro de 2019</span>
+            <img class="img-postagem" src="public/assets/img/home/atletas-correndo.jpg">
+            <p>Etiam pharetra et dui quis placerat. Vivamus vitae quam hendrerit sem ornare gravida a in nisl. Nunc nec
+                risus diam. Sed accumsan, lacus a suscipit dictum, dui nisi blandit leo, aliquam molestie magna quam sed
+                quam. Sed finibus tristique turpis, eu imperdiet tellus congue non. Sed bibendum velit sed urna
+                venenatis tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Proin vel neque condimentum, finibus eros non, commodo magna. Sed suscipit ex eu ligula
+                dictum, dictum fringilla neque venenatis. Sed iaculis augue lacinia libero dictum tincidunt.</p>
+            <br>
+            <p>Donec orci sapien, ultricies quis luctus id, lacinia ut magna. Donec sapien risus, hendrerit non sapien
+                at, tincidunt suscipit metus. Cras eget nisi mollis est egestas commodo. Nulla tincidunt lorem sit amet
+                ultrices sagittis. Sed eget venenatis magna, vel placerat sem. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec eu porta ex. Morbi consequat justo id finibus facilisis. Quisque commodo justo
+                metus, eget efficitur justo tincidunt varius. Mauris laoreet porttitor tincidunt. Sed luctus tempus
+                mauris. Mauris malesuada commodo lacus vitae condimentum.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

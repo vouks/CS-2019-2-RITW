@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+
+    <link href="/public/assets/css/login/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form action="/criarConta" method="post" class="register-form">
+                <input type="text" name="nome" placeholder="Nome" value="<%= dados.nome%>"/>
+                <input type="text" name="email" placeholder="E-mail" value="<%= dados.email%>"/>
+                <input type="password" name="senha" placeholder="Senha" value="<%= dados.senha%>"/>
+                <button>Criar conta</button>
+                <p class="message">Já possui cadastro?<a href="/login">Acesse aqui</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="/public/assets/js/login/login.js"></script>
+</body>
+
+</html>
