@@ -12,11 +12,13 @@
     <div class="login-page">
         <div class="form">
             <form action="/criarConta" method="post" class="register-form">
-                <input type="text" name="nome" placeholder="Nome" value="<%= dados.nome%>"/>
-                <input type="text" name="email" placeholder="E-mail" value="<%= dados.email%>"/>
-                <input type="password" name="senha" placeholder="Senha" value="<%= dados.senha%>"/>
+                <input type="text" name="nome" placeholder="Nome" />
+                <input type="text" name="email" placeholder="E-mail" />
+                <input type="password" name="senha" placeholder="Senha" />
                 <button>Criar conta</button>
-                <p class="message">Já possui cadastro?<a href="/login">Acesse aqui</a></p>
+                <p class="message">Já possui cadastro?
+                    <a href="/login">Acesse aqui</a>
+                </p>
             </form>
         </div>
     </div>
