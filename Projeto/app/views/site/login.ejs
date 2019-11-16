@@ -2,25 +2,39 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <title>Login</title>
 
-    <link href= "/public/assets/css/login/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/public/assets/css/login/styles.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="login-page">
-        <div class="form">
-          <form class="login-form">
-            <input type="text" placeholder="E-mail"/>
-            <input type="password" placeholder="Senha"/>
-            <button>Login</button>
-            <p class="message">Não possui cadastro? <a href="/criarConta">Crie aqui uma conta</a></p>
-          </form>
-        </div>
+
+  <div class="login-page">
+    <form class="form">
+
+      <div class="imgcontainer">
+        <img src="/public/assets/img/login/logo.png" alt="Logo" class="logo">
       </div>
 
-      <script src="/public/assets/js/login/login.js"></script>
+      <div class="input-container">
+        <i class="fa fa-envelope icon"></i>
+        <input class="input-field" type="text" placeholder="E-mail">
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="Senha">
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+      <p class="message">Não possui cadastro? <a href="/criarConta">Crie aqui uma conta</a></p>
+    </form>
+  </div>
+
+  <script src="/public/assets/js/login/login.js"></script>
 </body>
 
 </html>

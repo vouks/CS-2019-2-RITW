@@ -5,22 +5,37 @@
     <meta charset="UTF-8" />
     <title>Login</title>
 
-    <link href="/public/assets/css/login/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/public/assets/css/login/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
     <div class="login-page">
-        <div class="form">
-            <form action="/criarConta" method="post" class="register-form">
-                <input type="text" name="nome" placeholder="Nome" />
-                <input type="text" name="email" placeholder="E-mail" />
-                <input type="password" name="senha" placeholder="Senha" />
-                <button>Criar conta</button>
-                <p class="message">Já possui cadastro?
-                    <a href="/login">Acesse aqui</a>
-                </p>
-            </form>
-        </div>
+        <form class="form" action="/criarConta" method="post">
+
+            <div class="imgcontainer">
+                <img src="/public/assets/img/login/logo.png" alt="Logo" class="logo">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-user-o icon"></i>
+                <input class="input-field" type="text" name="nome" placeholder="Nome">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" name="emai" placeholder="E-mail">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" name="senha" placeholder="Senha">
+            </div>
+
+            <button type="submit" class="btn">Criar conta</button>
+            <p class="message">Já possui cadastro? <a href="/login">Acesse aqui conta</a></p>
+        </form>
     </div>
 
     <script src="/public/assets/js/login/login.js"></script>
