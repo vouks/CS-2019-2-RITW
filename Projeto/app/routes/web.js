@@ -1,19 +1,28 @@
-var contaController = require('../controllers/contaController');
+var contaModel = require('../models/contaModel')();
+var eventosControllers = require('../controllers/eventosControllers');
 
 module.exports = function (app) {
     app.get('/login', function (req, res) {
-        res.render('site/login');
+        res.render('site/login')
     });
 
-    app.get('/criarconta', function (req, res) {
+    app.get('/criarConta', function (req, res) {
         res.render('site/criarConta');
     });
 
-    app.get('/', function (req, res) {
-        contaController.index(req, res);
+    app.get('/home', function (req, res) {
+        res.render('site/home');
     });
 
-    app.post('/criarConta', function (req, res) {
-        contaController.store(req, res);
+    app.get('/eventos/', function (req, res) {
+        eventosControllers.index(req,res);
+    });
+
+    app.post('/eventos/add', function (req, res) {
+        eventosControllers.store(req,res);
+    });
+
+    app.get('/eventos/add', function (req, res) {
+        res.render('admin/addeventos');
     });
 };

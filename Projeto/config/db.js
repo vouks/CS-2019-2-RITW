@@ -1,12 +1,14 @@
 var mysql = require('mysql');
 
 var con = function(){
-return mysql.createConnection({
-    host:'200.98.66.163',
-    user:'cs_user',
-    password:'pwd_user',
-    database:'cs_db'
- });
+    return mysql.createConnection({
+        host: 'localhost',
+        user: 'admin',
+        password: 'testeusuario123',
+        database: 'cuso_node',
+        multipleStatements : true
+    });
 };
+
 
 module.exports = con;

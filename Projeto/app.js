@@ -1,3 +1,3 @@
-var app = require('./config/server.js');
+var app = require('./config/server');
 
 app();
